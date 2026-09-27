@@ -1,0 +1,30 @@
+[project]
+name = "buba-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "BubaIdriss", email = "abubakarabubakaridris6@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "fastapi>=0.141.1",
+    "google-api-python-client>=2.200.0",
+    "google-auth>=2.58.0",
+    "google-auth-httplib2>=0.4.2",
+    "google-auth-oauthlib>=1.4.1",
+    "langchain>=1.4.2",
+    "langchain-openrouter>=0.2.9",
+    "python-dotenv>=1.2.3",
+    "requests>=2.34.2",
+    "tavily>=1.1.0",
+    "uvicorn>=0.53.0",
+]
+
+[project.scripts]
+buba-agent = "buba_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
